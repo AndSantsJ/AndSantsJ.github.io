@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #222;
+  }
+  
+  header {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+ 
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  nav a ::after {
+    content: ' | ';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #9a03f1;
+    transition: width .3s;
+  }
+
+  nav a:hover {
+    color: #9a03f1;
+  }
+  
+  .header_img {
+    border-radius: 6px;
+    padding: 20px;
+    width:1px;
+    height:1px;
+    margin-left: 0;   
+    text-align: center;
+  }
+  #header_img img{
+    width: 10%;
+    height: 10%;
+  }
+  #sobre-mim {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  #sobre-mim h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #sobre-mim p {
+    font-size: 16px;
+  }
+  #link{
+    color:lightblue;
+  }
+  
+  #habilidades {
+    background-color: #555;
+    padding: 20px;
+  }
+  
+  .barras {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .barra {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #712ec9;
+  }
+  
+  .barra h3 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .barra .progress {
+    height: 30px;
+    background-color: #bbb;
+    border-radius: 5px;
+  }
+  
+  .barra .progress .fill {
+    height: calc(100% - 2px);
+    background-color: #999;
+    border-radius: 5px;
+  }
+  
+  #projetos {
+    background-color: #777;
+    padding: 20px;
+  }
+  
+  .projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .projeto {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  .projeto img {
+    width: 100%;
+  }
+  
+  .projeto h3 {
+    font-size: 18px;
+  }
+  
+  .projeto p {
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #888;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .barra .progress .fill {
+    width: calc(100% - 2px);
+    background-color: #5f5096;
+    border-radius: 5px;
+  }
+  
+  .barra .progress .fill {
+    width: calc((data-valor / 100) * 100);
+  }
+  
